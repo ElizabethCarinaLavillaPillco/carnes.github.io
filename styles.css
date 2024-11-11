@@ -1,0 +1,122 @@
+/* Reseteo de márgenes y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+/* Configuración de la imagen de fondo y capa de opacidad */
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('FONDO.jpg'); /* Cambia 'carne2.jpg' por la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+  
+/* Logo */
+.logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 350px;
+    height: auto;
+}
+
+/* Login Screen */
+#login-screen {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-screen h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#login-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #e60000;
+}
+
+.register-link {
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ff3939;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #fff700;
+}
+
+.bottom-nav a {
+    color: #f9f9f9;
+    font-size: 1.5em;
+}
+
+.bottom-nav a:hover {
+    color: #ffff00;
+}

@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdede;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos generales para las secciones de la página de pago */
+.purchase-summary, .shipping-form, .payment-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .purchase-summary h2, .shipping-form h2, .payment-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo del resumen del producto */
+  .product-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .product-summary img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-info strong {
+    font-weight: bold;
+  }
+  
+  input[type="number"], input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fcd8d8;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="number"] {
+    width: 80px;
+  }
+  
+  /* Estilo para el formulario de envío */
+  .shipping-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .shipping-form label {
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .shipping-form input {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos de la pasarela de pago */
+  .payment-section .payment-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
+  .payment-options label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .payment-options input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Detalles de pago */
+  .payment-method-details {
+    display: none;
+    margin-top: 15px;
+  }
+  
+  .payment-method-details.active {
+    display: block;
+  }
+  
+  .payment-method-details input {
+    margin-bottom: 15px;
+  }
+
+  .payment-method-details label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Estilos para las opciones específicas de pago */
+  .payment-method-details.credit-card input[type="text"] {
+    width: 100%;
+  }
+  
+  .payment-method-details.paypal input[type="email"] {
+    width: 100%;
+}
+
+.payment-method-details.bank-transfer input[type="text"] {
+    width: 100%;
+}
+  /* Botón de pago */
+.payment-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+  button {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #bb2020;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  button:hover {
+    background-color: #c82031;
+  }
+  
+  button:active {
+    background-color: #5f091a;
+  }
+  
+  /* Estilo para la barra de navegación en la parte inferior */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .bottom-nav a:hover {
+    color: #4CAF50;
+  }
+  
+  

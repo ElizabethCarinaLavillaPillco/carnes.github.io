@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <!-- Encabezado con imagen y título -->
+    <header class="header">
+      <h1>Detalle del Producto</h1>
+    </header>
+
+    <!-- Contenedor del producto -->
+    <section class="product-detail">
+      <!-- Imagen del producto -->
+      <div class="product-image">
+        <img src="milanesa.jpg" alt="Producto">
+      </div>
+
+      <!-- Información del producto -->
+      <div class="product-info">
+        <h2 class="product-name">Milanesa de Pollo</h2>
+        <p class="product-price">s/. 15.00 por kg</p>
+        
+        <!-- Descripción del producto -->
+        <div class="product-description">
+          <h3>Descripción</h3>
+          <p>Pedazos grandes de milanesa empanizada</p>
+        </div>
+
+        <!-- Calificación y Reseñas -->
+        <div class="product-rating">
+          <h3>Calificación</h3>
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>(35 reseñas)</p>
+        </div>
+
+        <!-- Reseñas de los usuarios -->
+        <div class="product-reviews">
+          <h3>Reseñas de Clientes</h3>
+          <p>"Excelente servicio, muy rapido y carne de buena calidad. Totalmente recomendados." - Juan P.</p>
+          <p>"Muy buenos, cumplen su función a la perfección. ¡Los recomiendo!" - Ana M.</p>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="product-actions">
+          <a href="pagarMilanesa.html"><button class="btn-buy">Comprar Ahora</button></a>
+          <button class="btn-cart" onclick="addToCart()">Añadir al Carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botones de navegación -->
+    <nav class="bottom-nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="catalogo.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+    </nav>
+
+    <script src="catalogo.js"></script>
+  </body>
+</html>
